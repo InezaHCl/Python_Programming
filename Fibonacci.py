@@ -9,8 +9,10 @@ count = 0
 Sum = 0
 
 #check if the number of terms is valid
-if nterms <= 0:
+if nterms < 0:
     print("Please Enter a positive enteger!")
+elif nterms == 0:
+    print('INVALID!')
 # if there is only one term, return n1
 elif nterms == 1:
     print('Fibonacci sequence upto',nterms,':')
