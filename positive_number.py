@@ -1,7 +1,9 @@
-#Creating the list
-myList = [12, -1, 3.5, -21, 0.91]
-#Checking the number is positive or not and print the value
+#Python program to print all positive numbers in a range.
 
-for element in myList:
-    if element >= 0:
-        print(element)
+myList = [15,5,-10,25,-30,20,-100,0]
+for i in myList:
+    if i<0:
+        myList.remove(i)
+print('New list: ',myList) #unsorted list
+myList.sort()
+print('New sorted list: ',myList) #sorted list
